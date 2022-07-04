@@ -36,7 +36,7 @@ class Storage {
     }
 
     static addBookToList(book) {
-        const list = document.querySelector('book-list');
+        const list = document.querySelector('#book-list');
 
         const row = document.createElement('div');
 
