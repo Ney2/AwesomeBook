@@ -1,0 +1,23 @@
+{
+  "name": "awesomebook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ney2/AwesomeBook.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ney2/AwesomeBook/issues"
+  },
+  "homepage": "https://github.com/Ney2/AwesomeBook#readme",
+  "devDependencies": {
+    "hint": "^7.0.1"
+  }
+}
