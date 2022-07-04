@@ -49,22 +49,52 @@ class Storage {
     }
 }
 
+// Store Class: Handles Storage
+class Store {
+    static getBooks() {
+      let books;
+      if(localStorage.getItem('books') === null) {
+        books = [];
+      } else {
+        books = JSON.parse(localStorage.getItem('books'));
+      }
+  
+      return books;
+    }
+  
+    static addBook(book) {
+      const books = Store.getBooks();
+      books.push(book);
+      localStorage.setItem('books', JSON.stringify(books));
+    }
+  
+  }
+
 // Display books
 document.addEventListener('DOMContentLoaded', Storage.displayBooks);
 
-// add.addEventListener('click', (e) => {
-//     e.preventDefault();
-//     const btitle = title.value;
-//     btitle
-//     const aname = author.value;
 
-//     if(!(bname.length <3 || aname.length <3)){
-//          id +=1;
-//         const newBook = new Book ();
-//         newBook.id = id;
-//         newBook.btitle = btitle;
-//         newBook.aname = aname;
-//     }
+const form = document.getElementById('formId')
 
-//     console.log (Book);
-// } )
+// Event: Add a Book
+form.addEventListener('submit', (e) => {
+    // Prevent actual submit
+    e.preventDefault();
+  
+    // Get form values
+    const title = document.querySelector('#btitle').value;
+    const author = document.querySelector('#aname').value;
+    id = Date.now() + Math.random();
+  
+ 
+      // Instatiate book
+      const book = new Book(id, title, author);
+  
+      // Add Book to UI
+      Storage.addBookToList(book);
+  
+      // Add book to store
+      Store.addBook(book);
+
+    
+  });
