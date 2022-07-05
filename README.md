@@ -24,9 +24,9 @@ Setup:
    - Twitter: 
    - LinkedIn: 
 # Author 3
-   - GitHub:
-   - Twitter: 
-   - LinkedIn:
+   - GitHub: @pamphilemkp
+   - Twitter: @PamphileMusonda
+   - LinkedIn: @PamphileMusonda
 
 🤝 Contributing
 Contributions, issues, and feature requests are welcome!
