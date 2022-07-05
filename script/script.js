@@ -72,8 +72,3 @@ button.addEventListener('click', (e) => {
     refreshDOM();
   }
 });
-
-// const newAuthor = document.createElement('td');
-//  const line = document.createElement('hr');
-// newBook.appendChild(newAuthor);
-// newAuthor.innerText = bookAuthor;
