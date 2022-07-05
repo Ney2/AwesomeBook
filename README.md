@@ -24,9 +24,9 @@ Setup:
    - Twitter: https://twitter.com/custodiolanga1
    - LinkedIn: https://www.linkedin.com/in/custodio-serafim-2a318a23a 
 # Author 3
-   - GitHub: @pamphilemkp
-   - Twitter: @PamphileMusonda
-   - LinkedIn: @PamphileMusonda
+   - GitHub:[@pamphilemkp](https://github.com/pamphilemkp)
+   - Twitter:[@pamphilemkp](https://github.com/PamphileMusonda)
+   - LinkedIn:[@pamphilemkp](https://github.com/PamphileMusonda-2bb8a9237)
 
 🤝 Contributing
 Contributions, issues, and feature requests are welcome!

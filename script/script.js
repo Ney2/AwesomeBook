@@ -37,13 +37,9 @@ const refreshDOM = () => {
     });
     const newBook = document.createElement('tr');
     const newTitle = document.createElement('td');
-    // const newAuthor = document.createElement('td');
-    //  const line = document.createElement('hr');
     newTitle.innerText = bookTitle;
-    // newAuthor.innerText = bookAuthor;
     newBook.id = bookId;
     newBook.appendChild(newTitle);
-    // newBook.appendChild(newAuthor);
     newBook.appendChild(removeBtn);
     bookList.appendChild(newBook);
   });
@@ -76,3 +72,8 @@ button.addEventListener('click', (e) => {
     refreshDOM();
   }
 });
+
+    // const newAuthor = document.createElement('td');
+    //  const line = document.createElement('hr');
+        // newBook.appendChild(newAuthor);
+            // newAuthor.innerText = bookAuthor;
