@@ -6,9 +6,11 @@ let allBooks = [];
 let id;
 
 class Book {
-    id = this.id;
-    name = this.name;
-    author = this.author;
+  constructor(id, name, author) {
+    this.id = id;
+    this.name = name;
+    this.author = author;
+  }
 }
 
 if (localStorage.getItem('bookList') === null) {
@@ -23,8 +25,7 @@ if (localStorage.getItem('id') === null) {
 const refreshDOM = () => {
   allBooks = JSON.parse(localStorage.getItem('bookList'));
   allBooks.forEach((book) => {
-    const bookTitle = '"'+ book.name+'"'  + "  " + "by" + " " + book.author;
-    const bookAuthor = book.author;
+    const bookTitle = `"${book.name}" by ${book.author}`;
     const bookId = book.id;
     const removeBtn = document.createElement('button');
     removeBtn.innerText = 'Remove';
@@ -36,13 +37,13 @@ const refreshDOM = () => {
     });
     const newBook = document.createElement('tr');
     const newTitle = document.createElement('td');
-   // const newAuthor = document.createElement('td');
-  //  const line = document.createElement('hr');
+    // const newAuthor = document.createElement('td');
+    //  const line = document.createElement('hr');
     newTitle.innerText = bookTitle;
-   // newAuthor.innerText = bookAuthor;
+    // newAuthor.innerText = bookAuthor;
     newBook.id = bookId;
     newBook.appendChild(newTitle);
-   // newBook.appendChild(newAuthor);
+    // newBook.appendChild(newAuthor);
     newBook.appendChild(removeBtn);
     bookList.appendChild(newBook);
   });
