@@ -73,7 +73,7 @@ button.addEventListener('click', (e) => {
   }
 });
 
-    // const newAuthor = document.createElement('td');
-    //  const line = document.createElement('hr');
-        // newBook.appendChild(newAuthor);
-            // newAuthor.innerText = bookAuthor;
+// const newAuthor = document.createElement('td');
+//  const line = document.createElement('hr');
+// newBook.appendChild(newAuthor);
+// newAuthor.innerText = bookAuthor;
