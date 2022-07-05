@@ -10,15 +10,16 @@
 # Getting Started
 To get a local copy up and running follow these simple example steps.
 Prerequisites: Any kind of browser. 
-Setup:
-    1. Clone the repository 
-    2. Open the folder 
-    3. Run index.html file
+#####Setup:
+    1. Clone the repository using the link: https://github.com/Ney2/AwesomeBook.git
+    2. Then open the folder in your local environment 
+    3. Choose the file with a name index.html file
+    4. Run index.html file using any browser in your local environment
 
 # Author 1
-   - GitHub: @Ney2
-   - Twitter: @KidistGuta
-   - LinkedIn: @KidistDinku
+   - GitHub: [@Ney2](https://github.com/Ney2)
+   - Twitter: [@KidistGuta](https://twitter.com/GutaKidist)
+   - LinkedIn: [@KidistDinku](https://www.linkedin.com/in/kidist-guta-014025183/)
 # Author 2
    - GitHub: https://github.com/looh16/Hello-Microverse
    - Twitter: https://twitter.com/custodiolanga1
@@ -38,4 +39,4 @@ Acknowledgments
 To microverse
 
 📝 License
-This project is MIT licensed.
+This project is [MIT] (https://github.com/microverseinc/readme-template/blob/master/MIT.md) licensed.
