@@ -20,9 +20,9 @@ Setup:
    - Twitter: @KidistGuta
    - LinkedIn: @KidistDinku
 # Author 2
-   - GitHub:
-   - Twitter: 
-   - LinkedIn: 
+   - GitHub: https://github.com/looh16/Hello-Microverse
+   - Twitter: https://twitter.com/custodiolanga1
+   - LinkedIn: https://www.linkedin.com/in/custodio-serafim-2a318a23a 
 # Author 3
    - GitHub: @pamphilemkp
    - Twitter: @PamphileMusonda

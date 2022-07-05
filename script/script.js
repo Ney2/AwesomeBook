@@ -36,20 +36,20 @@ const refreshDOM = () => {
       localStorage.setItem('bookList', JSON.stringify(allBooks));      // eslint-disable-next-line
       location.reload();
     });
-//     const newBook = document.createElement('div');
-//     const newTitle = document.createElement('p');
-//     const newAuthor = document.createElement('p');
-//     const line = document.createElement('hr');
-//     newTitle.innerText = bookTitle;
-//     newAuthor.innerText = bookAuthor;
-//     newBook.id = bookId;
-//     newBook.appendChild(newTitle);
-//     newBook.appendChild(newAuthor);
-//     newBook.appendChild(removeBtn);
-//     newBook.appendChild(line);
-//     bookList.appendChild(newBook);
-//   });
-// };
+     const newBook = document.createElement('div');
+     const newTitle = document.createElement('p');
+     const newAuthor = document.createElement('p');
+     const line = document.createElement('hr');
+     newTitle.innerText = bookTitle;
+     newAuthor.innerText = bookAuthor;
+     newBook.id = bookId;
+     newBook.appendChild(newTitle);
+     newBook.appendChild(newAuthor);
+     newBook.appendChild(removeBtn);
+     newBook.appendChild(line);
+     bookList.appendChild(newBook);
+   });
+ };
 
 window.onload = refreshDOM;
 button.addEventListener('click', (e) => {
