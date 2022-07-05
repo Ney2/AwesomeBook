@@ -1,3 +1,42 @@
 body * {
   margin: 0;
 }
+
+#all {
+  margin-left: 3rem;
+}
+
+#add-new {
+  margin-left: 3rem;
+}
+
+#bookForm {
+  margin-left: 3rem;
+}
+
+#add {
+  margin-left: 8rem;
+  border: 2px solid black;
+}
+
+table {
+  border: inset 2px black;
+  size: 2rem;
+}
+
+table td {
+  table-layout: fixed;
+  width: 15rem;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+table#tableId tr:nth-child(even) {
+  background-color: #fff;
+}
+table#tableId tr:nth-child(odd) {
+ background-color:#eee;
+}
+
+#bookListm div p{
+  display: inline-block;
+}
