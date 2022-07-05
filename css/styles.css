@@ -2,26 +2,50 @@ body * {
   margin: 0;
 }
 
+.top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 #all {
-  margin-left: 3rem;
+  text-align: center;
+  padding: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 
 #add-new {
-  margin-left: 3rem;
+  text-align: center;
+  padding: 10px;
 }
 
 #bookForm {
-  margin-left: 3rem;
+  align-self: center;
+}
+
+.line {
+  width: 100px;
+  align-self: center;
+  height: 2px;
+  background-color: black;
+  border: none;
 }
 
 #add {
   margin-left: 8rem;
   border: 2px solid black;
+  box-shadow: 3px 2px black;
 }
 
 table {
   border: inset 2px black;
-  size: 2rem;
+  width: fit-content;
+  align-self: center;
 }
 
 table td {
@@ -30,13 +54,15 @@ table td {
   overflow: hidden;
   word-wrap: break-word;
 }
+
 table#tableId tr:nth-child(even) {
   background-color: #fff;
 }
+
 table#tableId tr:nth-child(odd) {
- background-color:#eee;
+  background-color: #eee;
 }
 
-#bookListm div p{
+#bookListm div p {
   display: inline-block;
 }
