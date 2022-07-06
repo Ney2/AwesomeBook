@@ -73,6 +73,8 @@ button.addEventListener('click', (e) => {
   }
 });
 
+// Add time function
+
 function timer() {
   const d = new Date();
 
@@ -85,8 +87,6 @@ function timer() {
   const day = d.getDate();
   const month = d.toLocaleDateString('en-US', { month: 'short' });
   const years = d.getFullYear();
-
-  console.log(day)
 
   // display ampm
   const ampm = hour >= 12 ? 'PM' : 'AM';

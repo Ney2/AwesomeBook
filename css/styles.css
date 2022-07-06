@@ -49,6 +49,25 @@ list-style: none;
     border-right: rgba(0, 0, 0, 1) 2px solid;
   }
 
+  .timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+
+  .timer #time {
+     display: flex;
+    flex-direction: row-reverse;
+    align-items: center; 
+    text-align: end;
+    width: 90vw;
+    margin-bottom: 20px;
+  }
+
+
+  /* before */
+
 .top {
   display: flex;
   flex-direction: column;
