@@ -26,9 +26,9 @@ Any kind of browser.
    - Twitter: [@KidistGuta](https://twitter.com/GutaKidist)
    - LinkedIn: [@KidistDinku](https://www.linkedin.com/in/kidist-guta-014025183/)
 # Author 2
-   - GitHub: [@looh16]https://github.com/looh16/Hello-Microverse
-   - Twitter: [@looh16]https://twitter.com/custodiolanga1
-   - LinkedIn: [@looh16]https://www.linkedin.com/in/custodio-serafim-2a318a23a 
+   - GitHub: [@looh16](https://github.com/looh16/Hello-Microverse)
+   - Twitter: [@looh16](https://twitter.com/custodiolanga1)
+   - LinkedIn: [@looh16](https://www.linkedin.com/in/custodio-serafim-2a318a23a) 
 # Author 3
    - GitHub:[@pamphilemkp](https://github.com/pamphilemkp)
    - Twitter:[@pamphilemkp](https://github.com/PamphileMusonda)
