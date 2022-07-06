@@ -81,11 +81,6 @@ nav {
   margin-bottom: 20px;
 }
 
-/* .top {
-  position: relative;
-  top: 100px;
-} */
-
 .top h1 {
   text-align: center;
   margin-bottom: 20px;
@@ -206,28 +201,3 @@ input {
   width: 30vw;
   height: 35px;
 }
-
-
-/*
-.timer #time {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  text-align: end;
-  width: 90vw;
-  margin-bottom: 20px;
-}
-
-#contact-info {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-#contact-info h2 {
-  margin-bottom: 20px;
-}
-*/
