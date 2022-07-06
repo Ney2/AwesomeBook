@@ -8,8 +8,24 @@
     <title>Awesome Books</title>
 </head>
 <body>
-    <section class="top">
-    <h1 id="all">All Awesome Books</h1>
+
+<nav>
+    <div class="navigation">
+        <h1>Awesome Books</h1>
+        <ul>
+            <li><a href="#list"  class="border list1">List</a></li>
+            <li><a href="#form"  class="border list2">Add Book</a></li>
+            <li ><a href="#contact-info" class="border list3">Contact</a></li>
+        </ul>
+  </div>
+</nav>
+
+<div class="timer">
+    <p id="time"></p>
+</div>
+
+    <section class="top" id="list">
+    <h1>All Awesome Books</h1>
     <table id="tableId">
         <tbody id="bookList">
             
@@ -18,7 +34,7 @@
     </section>
     <br>
 
-    <section class="form">
+    <section class="form hide-nav" id="form">
         <hr class="line">
         <h1 id="add-new">Add a new book</h1>
         <form id="bookForm" action="#" class="add-book">
@@ -32,6 +48,28 @@
             <br>
             <button type="submit" id="add">Add</button>
         </form>
+    </section>
+
+    <section class="hide-nav" id="contact">
+     <div  id="contact-info">
+        <h2>Contact information</h2>
+
+        <p>Do you have any question or just want to say "hello"? <br>
+        you can reach out to us:
+        </p>
+
+        <ul>
+            <li>Our e-mail pamphilemkp@gmail.com</li>
+            <li>Our phone number: +90 (533) 88 29 657</li>
+            <li>Our adress street name 22, 84502 City, Country</li>
+        </ul>
+    </div>
+    </section>
+
+    <section class="footer-section">
+        <div class="footer">
+            <p>Copyright ...<br>
+        </div>
     </section>
 
     <script src="script/script.js"></script>
