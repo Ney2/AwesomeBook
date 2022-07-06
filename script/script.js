@@ -72,3 +72,30 @@ button.addEventListener('click', (e) => {
     refreshDOM();
   }
 });
+
+function timer() {
+  const d = new Date();
+
+  const daysArray = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+
+  const sec = d.getSeconds();
+  const min = d.getMinutes();
+  const hour = d.getHours();
+  const dayName = daysArray[d.getDay()];
+  const day = d.getDate();
+  const month = d.toLocaleDateString('en-US', { month: 'short' });
+  const years = d.getFullYear();
+
+  console.log(day)
+
+  // display ampm
+  const ampm = hour >= 12 ? 'PM' : 'AM';
+
+  const time = document.getElementById('time');
+  time.innerHTML = `${month}  ${dayName}  ${day}th ${years}, ${hour}:${min}:${sec}  ${ampm} `;
+}
+
+//  const D = new Date();
+// document.getElementById("time").innerHTML = D.toDateString();
+
+setInterval(timer, 1000);
