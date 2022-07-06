@@ -19,10 +19,6 @@ nav {
   border: 1px solid rgba(0, 0, 0, 1);
  }
 
- .navigation h1 {
-  
-}
-
 .navigation ul {
   display: flex;
   gap: 10px;
@@ -65,7 +61,20 @@ list-style: none;
     margin-bottom: 20px;
   }
 
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin: 3rem;
+  }
+  .contact p {
+    align-self: center;
+    margin-bottom: 1rem;
+  }
 
+  .contact ul {
+    align-self: center;
+  }
   /* before */
 
 .top {

@@ -13,9 +13,9 @@
     <div class="navigation">
         <h1>Awesome Books</h1>
         <ul>
-            <li><a href="#"  class="border">List</a></li>
-            <li><a href="#"  class="border">Add a new book</a></li>
-            <li ><a href="#">Contact</a></li>
+            <li><a href="#listSection"  class="border">List</a></li>
+            <li><a href="#formSection"  class="border">Add a new book</a></li>
+            <li ><a href="#contactSection">Contact</a></li>
         </ul>
   </div>
 </nav>
@@ -24,7 +24,7 @@
     <p id="time"></p>
 </div>
 
-    <section class="top">
+    <section id="listSection" class="top">
     <table id="tableId">
         <tbody id="bookList">
             
@@ -33,7 +33,7 @@
     </section>
     <br>
 
-    <section class="form">
+    <section id="formSection" class="form">
         <hr class="line">
         <h1 id="add-new">Add a new book</h1>
         <form id="bookForm" action="#" class="add-book">
@@ -47,6 +47,26 @@
             <br>
             <button type="submit" id="add">Add</button>
         </form>
+    </section>
+
+    <section id="contactSection" class="contact">
+        <h1 id="add-new">Contact information</h1>
+        <p>
+            Do have questions or you just want to say "Hello"?<br>
+            you can reach out to us!
+        </p>
+        <ul>
+            <li>
+                Our e-mail:mail@mail.com
+            </li>
+            <li>
+                Our phone number: 0435865334422
+            </li>
+            <li>
+                Our address: Streeatname 22, 84503 City, Country
+            </li>
+        </ul>
+        
     </section>
 
     <script src="script/script.js"></script>
