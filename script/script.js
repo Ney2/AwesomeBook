@@ -29,6 +29,9 @@ const refreshDOM = () => {
     const bookId = book.id;
     const removeBtn = document.createElement('button');
     removeBtn.innerText = 'Remove';
+    // add remove color
+    removeBtn.classList.add('show-color');
+    //
     removeBtn.addEventListener('click', (e) => {
       const { id } = e.target.parentNode;
       allBooks = allBooks.filter((book) => book.id.toString() !== id.toString());
@@ -95,38 +98,52 @@ function timer() {
   time.innerHTML = `${month}  ${dayName}  ${day}th ${years}, ${hour}:${min}:${sec}  ${ampm} `;
 }
 
-//  const D = new Date();
-// document.getElementById("time").innerHTML = D.toDateString();
-
 setInterval(timer, 1000);
 
-//add navigation 
+// add navigation
 
- // grabbing lists
-const list1 = document.querySelector(".list1");
-const list2 = document.querySelector(".list2");
-const list3 = document.querySelector(".list3");
+// grabbing lists
+const list1 = document.querySelector('.list1');
+const list2 = document.querySelector('.list2');
+const list3 = document.querySelector('.list3');
 
-//tagging elements
+// tagging elements
 const addBook = document.getElementById('form');
-const List= document.getElementById('list');
+const List = document.getElementById('list');
 const contact = document.getElementById('contact');
 
-list1.addEventListener('click',() => {
-     List.classList.remove('hide-nav');
-     addBook .classList.add('hide-nav');
-     contact .classList.add('hide-nav');
-     
+list1.addEventListener('click', () => {
+  // show focus color
+  list3.style.color = '#000';
+  list2.style.color = '#000';
+  list1.style.color = 'rgba(43, 64, 250,1)';
+
+  // navigation
+  List.classList.remove('hide-nav');
+  addBook.classList.add('hide-nav');
+  contact.classList.add('hide-nav');
 });
 
-list2.addEventListener('click',() => {
-  addBook .classList.remove('hide-nav');
-  contact .classList.add('hide-nav');
+list2.addEventListener('click', () => {
+  // show focus color
+  list3.style.color = '#000';
+  list2.style.color = 'rgba(43, 64, 250,1)';
+  list1.style.color = '#000';
+
+  // navigation
+  addBook.classList.remove('hide-nav');
+  contact.classList.add('hide-nav');
   List.classList.add('hide-nav');
 });
 
-list3.addEventListener('click',() => {
-  contact .classList.remove('hide-nav');
+list3.addEventListener('click', () => {
+  // show focus color
+  list3.style.color = 'rgba(43, 64, 250,1)';
+  list2.style.color = '#000';
+  list1.style.color = '#000';
+
+  // navigation
+  contact.classList.remove('hide-nav');
   List.classList.add('hide-nav');
-  addBook .classList.add('hide-nav');
+  addBook.classList.add('hide-nav');
 });

@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   color: #000;
   background-color: #8bc6ec;
   background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
@@ -13,6 +15,8 @@ nav {
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+  margin-top: 20px;
+  overflow: hidden;
 }
 
 .navigation {
@@ -20,7 +24,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   width: 90vw;
-  padding: 15px;
+  padding: 2px 20px;
   border: 1px solid rgba(0, 0, 0, 1);
 }
 
@@ -35,7 +39,7 @@ nav {
 }
 
 .navigation ul li a {
-  color: rgb(248, 244, 244);
+  color: rgb(14, 13, 13);
   text-decoration: none;
   padding: 10px;
 }
@@ -77,6 +81,11 @@ nav {
   margin-bottom: 20px;
 }
 
+/* .top {
+  position: relative;
+  top: 100px;
+} */
+
 .top h1 {
   text-align: center;
   margin-bottom: 20px;
@@ -87,20 +96,24 @@ nav {
   align-self: center;
 }
 
+.footer-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
 .footer {
-  position: fixed;
-  left: 2rem;
-  bottom: 0.4rem;
+  margin-top: 20px;
   width: 90vw;
-  height: 2rem;
   border: 1px solid rgba(0, 0, 0, 1);
   background-color: #8bc6ec;
   background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
-  text-align: letf;
+  text-align: left;
 }
 
 .footer p {
-  margin: 0.5rem;
+  padding: 2px 20px;
 }
 
 /* before */
@@ -146,15 +159,29 @@ table {
   align-self: center;
 }
 
+#bookList {
+  margin-bottom: 20px;
+}
+
+table tr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+
 table td {
   table-layout: fixed;
-  width: 15rem;
+  width: 50vw;
+  height: 35px;
   overflow: hidden;
   word-wrap: break-word;
 }
 
 table#tableId tr:nth-child(even) {
-  background-color: #fff;
+  background-color: rgb(2, 116, 182);
+  color: #fff;
 }
 
 table#tableId tr:nth-child(odd) {
@@ -166,11 +193,41 @@ table#tableId tr:nth-child(odd) {
 }
 
 /* hide and show elements */
-.show-nav {
-  display: block;
-  width: 100vw;
+.show-color {
+  color: rgb(248, 249, 252);
+  background-color: rgb(212, 40, 40);
 }
 
 .hide-nav {
   display: none;
 }
+
+input {
+  width: 30vw;
+  height: 35px;
+}
+
+
+/*
+.timer #time {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  text-align: end;
+  width: 90vw;
+  margin-bottom: 20px;
+}
+
+#contact-info {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#contact-info h2 {
+  margin-bottom: 20px;
+}
+*/
