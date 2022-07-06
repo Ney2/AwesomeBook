@@ -85,7 +85,7 @@ function timer() {
   const hour = d.getHours();
   const dayName = daysArray[d.getDay()];
   const day = d.getDate();
-  const month = d.toLocaleDateString('en-US', { month: 'short' });
+  const month = d.toLocaleDateString('en-US', { month: 'long' });
   const years = d.getFullYear();
 
   // display ampm
@@ -99,3 +99,34 @@ function timer() {
 // document.getElementById("time").innerHTML = D.toDateString();
 
 setInterval(timer, 1000);
+
+//add navigation 
+
+ // grabbing lists
+const list1 = document.querySelector(".list1");
+const list2 = document.querySelector(".list2");
+const list3 = document.querySelector(".list3");
+
+//tagging elements
+const addBook = document.getElementById('form');
+const List= document.getElementById('list');
+const contact = document.getElementById('contact');
+
+list1.addEventListener('click',() => {
+     List.classList.remove('hide-nav');
+     addBook .classList.add('hide-nav');
+     contact .classList.add('hide-nav');
+     
+});
+
+list2.addEventListener('click',() => {
+  addBook .classList.remove('hide-nav');
+  contact .classList.add('hide-nav');
+  List.classList.add('hide-nav');
+});
+
+list3.addEventListener('click',() => {
+  contact .classList.remove('hide-nav');
+  List.classList.add('hide-nav');
+  addBook .classList.add('hide-nav');
+});
