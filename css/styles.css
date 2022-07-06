@@ -65,7 +65,8 @@ list-style: none;
     display: flex;
     flex-direction: column;
     justify-items: center;
-    margin: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 10rem;
   }
   .contact p {
     align-self: center;
@@ -74,6 +75,21 @@ list-style: none;
 
   .contact ul {
     align-self: center;
+  }
+
+  .footer { 
+    position: fixed;
+    left: 2rem;
+    bottom: 0.1rem;
+    width: 95%;
+    height: 2rem;
+    border: 1px solid rgba(0, 0, 0, 1);
+    background-color: white;
+    text-align: letf;
+  }
+
+  .footer p {  
+    margin: 0.5rem;
   }
   /* before */
 
