@@ -29,9 +29,7 @@ const refreshDOM = () => {
     const bookId = book.id;
     const removeBtn = document.createElement('button');
     removeBtn.innerText = 'Remove';
-    // add remove color
     removeBtn.classList.add('show-color');
-    //
     removeBtn.addEventListener('click', (e) => {
       const { id } = e.target.parentNode;
       allBooks = allBooks.filter((book) => book.id.toString() !== id.toString());
@@ -125,24 +123,20 @@ list1.addEventListener('click', () => {
 });
 
 list2.addEventListener('click', () => {
-  // show focus color
   list3.style.color = '#000';
   list2.style.color = 'rgba(43, 64, 250,1)';
   list1.style.color = '#000';
 
-  // navigation
   addBook.classList.remove('hide-nav');
   contact.classList.add('hide-nav');
   List.classList.add('hide-nav');
 });
 
 list3.addEventListener('click', () => {
-  // show focus color
   list3.style.color = 'rgba(43, 64, 250,1)';
   list2.style.color = '#000';
   list1.style.color = '#000';
 
-  // navigation
   contact.classList.remove('hide-nav');
   List.classList.add('hide-nav');
   addBook.classList.add('hide-nav');
