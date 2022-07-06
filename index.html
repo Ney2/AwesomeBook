@@ -4,14 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Awesome Books</title>
 </head>
 <body>
-    <section>
-    <h1>Awesome Books</h1>
-    <div id="bookList"></div>
+    <section class="top">
+    <h1 id="all">All Awesome Books</h1>
+    <table id="tableId">
+        <tbody id="bookList">
+            
+        </tbody>
+    </table>
     </section>
+    <br>
+
     <section class="form">
+        <hr class="line">
+        <h1 id="add-new">Add a new book</h1>
         <form id="bookForm" action="#" class="add-book">
             <div class="title">
             <input type="text" placeholder="Title" id="bookTitle" required/>

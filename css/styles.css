@@ -1,3 +1,68 @@
 body * {
   margin: 0;
 }
+
+.top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#all {
+  text-align: center;
+  padding: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+#add-new {
+  text-align: center;
+  padding: 10px;
+}
+
+#bookForm {
+  align-self: center;
+}
+
+.line {
+  width: 100px;
+  align-self: center;
+  height: 2px;
+  background-color: black;
+  border: none;
+}
+
+#add {
+  margin-left: 8rem;
+  border: 2px solid black;
+  box-shadow: 3px 2px black;
+}
+
+table {
+  border: inset 2px black;
+  width: fit-content;
+  align-self: center;
+}
+
+table td {
+  table-layout: fixed;
+  width: 15rem;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+table#tableId tr:nth-child(even) {
+  background-color: #fff;
+}
+
+table#tableId tr:nth-child(odd) {
+  background-color: #eee;
+}
+
+#bookListm div p {
+  display: inline-block;
+}
