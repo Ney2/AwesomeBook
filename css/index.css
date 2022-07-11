@@ -52,14 +52,7 @@ nav {
   border-right: rgba(0, 0, 0, 1) 2px solid;
 }
 
-.timer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-}
-
-.timer #time {
+.time {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
@@ -143,14 +136,13 @@ nav {
 }
 
 #add {
-  margin-left: 27rem;
   border: 2px solid black;
   box-shadow: 3px 2px black;
 }
 
 table {
   border: inset 2px black;
-  width: fit-content;
+  width: 50vw;
   align-self: center;
 }
 
@@ -183,14 +175,14 @@ table#tableId tr:nth-child(odd) {
   background-color: #eee;
 }
 
-#bookListm div p {
-  display: inline-block;
+#bookList div {
+  display: flex;
+  justify-content: space-between;
 }
 
-/* hide and show elements */
-.show-color {
-  color: rgb(248, 249, 252);
-  background-color: rgb(212, 40, 40);
+#bookList div p {
+  display: inline-block;
+  margin: 20px;
 }
 
 .hide-nav {
@@ -198,6 +190,15 @@ table#tableId tr:nth-child(odd) {
 }
 
 input {
-  width: 30vw;
+  display: flex;
+  width: 50vw;
   height: 35px;
+}
+
+.remove {
+  height: fit-content;
+  margin: 20px;
+  background-color: red;
+  color: #fff;
+  font-weight: 20px;
 }
